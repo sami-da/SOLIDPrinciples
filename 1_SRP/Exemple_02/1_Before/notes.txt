@@ -1,0 +1,5 @@
+﻿The Order class has multiple responsibilities:
+	Managing order data
+	Displaying order information
+	Saving order to a file
+If we need to change how orders are displayed or saved, we would need to modify the Order class, which violates SRP.

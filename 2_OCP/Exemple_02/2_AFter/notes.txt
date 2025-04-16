@@ -1,0 +1,8 @@
+﻿For example, if we want to add a new email service that logs emails instead of sending them, we can create a new implementation of IEmailService without modifying UserManager.
+
+
+Benefits of Refactoring
+Open for Extension: You can add new implementations of IUserValidator, IUserRepository, or IEmailService without modifying the UserManager class.
+Closed for Modification: The UserManager class does not need to change when new behaviors are added.
+Dependency Inversion: By depending on abstractions (interfaces), the UserManager class is decoupled from specific implementations.
+Testability: You can easily mock the interfaces for unit testing.

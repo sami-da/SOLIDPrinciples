@@ -1,0 +1,2 @@
+﻿The IOrderService interface forces InStoreOrderService to implement the SendEmailNotification method, even though it is not relevant for in-store orders.
+This creates unnecessary dependencies and violates the principle that no client should be forced to depend on methods it does not use.

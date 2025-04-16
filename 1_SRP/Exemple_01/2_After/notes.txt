@@ -1,0 +1,8 @@
+﻿Single Responsibility: Each class now has a single responsibility:
+	- UserValidator handles validation.
+	- UserRepository handles data persistence.
+	- EmailService handles email notifications.
+UserManager orchestrates the process.
+Testability: Each class can be tested independently.
+Maintainability: Changes to one responsibility (e.g., validation rules) won’t affect others.
+Extensibility: Adding new features (e.g., logging) is easier without modifying existing classes.

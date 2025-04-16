@@ -1,0 +1,14 @@
+﻿Clear Separation of Concerns:
+	Order: Only manages order data
+	OrderDisplay: Handles how orders are displayed
+	OrderRepository: Manages storing and retrieving orders
+Improved Maintainability:
+	If we need to change how orders are displayed, we only modify OrderDisplay
+	If we need to change storage (e.g., from file to database), we only modify OrderRepository
+Better Testability:
+	Each class can be tested independently
+	We can mock dependencies when testing
+Easier to Extend:
+	We can add new display formats without changing the Order class
+	We can add new storage methods without affecting other functionality
+This simpler example shows how even in basic scenarios, applying SRP leads to more maintainable and flexible code.

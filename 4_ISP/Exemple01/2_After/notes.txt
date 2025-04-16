@@ -1,0 +1,10 @@
+﻿Split Interfaces:
+
+The IOrderService interface is split into smaller, more specific interfaces (IOrderProcessor, IDiscountCalculator, IInvoiceGenerator, and IEmailNotifier).
+Each class implements only the interfaces it needs.
+Adherence to ISP:
+
+InStoreOrderService no longer depends on the IEmailNotifier interface, avoiding unnecessary implementation of irrelevant methods.
+Flexibility:
+
+Adding new functionality (e.g., SMS notifications) can be done by creating a new interface (ISmsNotifier) without affecting existing classes.

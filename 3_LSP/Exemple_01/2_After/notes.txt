@@ -1,0 +1,4 @@
+﻿We've added a CanApplyDiscount method to explicitly check if a discount can be applied
+The Order class now handles the case where a discount can't be applied
+No exceptions are thrown, maintaining the expected behavior across all discount types
+Any discount implementation can now be safely substituted for another without breaking the program

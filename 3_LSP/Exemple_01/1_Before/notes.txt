@@ -1,0 +1,4 @@
+﻿The FreeProductDiscount class violates the Liskov Substitution Principle for several reasons:
+New Precondition: It adds a new precondition (price must be at least $10) that doesn't exist in the base class. This means we can't freely substitute FreeProductDiscount for Discount without risking exceptions.
+Behavioral Change: The base Discount class's implementation guarantees that it will always return a value without throwing exceptions. The derived FreeProductDiscount can throw exceptions, which changes the expected behavior.
+Substitutability Issue: Due to this violation, the following code that works perfectly fine with the base class could fail with the derived class:

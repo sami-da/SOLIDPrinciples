@@ -1,0 +1,6 @@
+﻿OrderProcessor directly depends on concrete implementations (EmailNotifier and SqlOrderRepository)
+It's tightly coupled, making it hard to:
+	Switch to different notification methods (SMS, push notifications)
+	Change database technology
+	Unit test the OrderProcessor class
+Changes in low-level modules might affect the high-level module

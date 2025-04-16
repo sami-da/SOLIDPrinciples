@@ -1,0 +1,5 @@
+﻿Loose Coupling: High-level modules depend on abstractions, not concrete implementations
+Flexibility: Easy to switch implementations without changing the OrderProcessor
+Testability: Easy to mock dependencies for unit testing
+Maintainability: Changes to one implementation don't affect other parts of the system
+Extensibility: New implementations can be added without modifying existing code

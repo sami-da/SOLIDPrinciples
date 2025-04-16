@@ -1,0 +1,5 @@
+﻿Multiple Responsibilities:
+	- Validating user input.
+	- Saving user data to the database.
+	- Sending email notifications.
+This makes the class harder to maintain, test, and extend.
