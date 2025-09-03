@@ -1,4 +1,4 @@
-﻿namespace OCP.Example_01.After
+﻿namespace OCP.Exemple_01.After
 {
     public class PremiumCustomerDiscount : IDiscountStrategy
     {

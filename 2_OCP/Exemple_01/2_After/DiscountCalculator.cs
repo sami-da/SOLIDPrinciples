@@ -1,20 +1,19 @@
-﻿using OCP.Example_01.After;
-using System;
-using System.Collections.Generic;
-namespace OCP.Exemple_01._2_After
+﻿namespace OCP.Exemple_01.After
 {
     public class DiscountCalculator
     {
-        private readonly IDiscountStrategy _discountStrategy;
+        private readonly IDiscountStrategyFactory _discountStrategyFactory;
 
-        public DiscountCalculator(IDiscountStrategy discountStrategy)
+        public DiscountCalculator()
         {
-            _discountStrategy = discountStrategy;
+            _discountStrategyFactory = new DiscountStrategyFactory();
         }
 
-        public decimal CalculateDiscount(decimal totalAmount)
+        public decimal CalculateDiscount(string customerType, decimal totalAmount)
         {
-            return _discountStrategy.CalculateDiscount(totalAmount);
+            var discountStrategy = _discountStrategyFactory.GetDiscountStrategy(customerType);
+            var discount = discountStrategy.CalculateDiscount(totalAmount);
+            return discount;
         }
     }
 }

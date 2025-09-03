@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -68,6 +68,8 @@
   <ItemGroup>
     <Content Include="Exemple_02\2_AFter\notes.txt" />
     <Compile Include="Exemple_01\1_Before\DiscountCalculator.cs" />
+    <Compile Include="Exemple_01\2_After\DiscountStrategyFactory.cs" />
+    <Compile Include="Exemple_01\2_After\IDiscountStrategyFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,4 @@
-﻿using OCP.Example_01.After;
-using OCP.Exemple_01._2_After;
+﻿using OCP.Exemple_01.After;
 using OCP.Exemple_02;
 using OCP.Exemple_02.After;
 using System;
@@ -34,22 +33,19 @@ namespace OCP
 
             #region Exemple 2
             decimal totalAmount = 1000;
+            DiscountCalculator discountCalculator = new DiscountCalculator();
 
             // Regular customer
-            var regularDiscount = new DiscountCalculator(new RegularCustomerDiscount());
-            Console.WriteLine($"Regular Customer Discount: {regularDiscount.CalculateDiscount(totalAmount)}");
+            Console.WriteLine($"Regular Customer Discount: {discountCalculator.CalculateDiscount("Regular", totalAmount)}");
 
             // Premium customer
-            var premiumDiscount = new DiscountCalculator(new PremiumCustomerDiscount());
-            Console.WriteLine($"Premium Customer Discount: {premiumDiscount.CalculateDiscount(totalAmount)}");
+            Console.WriteLine($"Premium Customer Discount: {discountCalculator.CalculateDiscount("Premium", totalAmount)}");
 
             // VIP customer
-            var vipDiscount = new DiscountCalculator(new VipCustomerDiscount());
-            Console.WriteLine($"VIP Customer Discount: {vipDiscount.CalculateDiscount(totalAmount)}");
+            Console.WriteLine($"VIP Customer Discount: {discountCalculator.CalculateDiscount("VIP", totalAmount)}");
 
             // No discount
-            var noDiscount = new DiscountCalculator(new NoDiscount());
-            Console.WriteLine($"No Discount: {noDiscount.CalculateDiscount(totalAmount)}");
+            Console.WriteLine($"No Discount: {discountCalculator.CalculateDiscount("NoDiscount", totalAmount)}");
             #endregion
         }
     }

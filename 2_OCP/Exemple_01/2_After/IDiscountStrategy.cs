@@ -1,4 +1,4 @@
-namespace OCP.Example_01.After
+namespace OCP.Exemple_01.After
 {
     // This interface allows us to define a contract for discount strategies.
     // Each discount strategy can be implemented in its own class, making it easy
