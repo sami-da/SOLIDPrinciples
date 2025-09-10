@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,7 +61,10 @@
     <Content Include="Exemple_01\1_Before\notes.txt" />
     <Content Include="Exemple_02\1_Before\notes.txt" />
     <Content Include="Exemple_02\2_After\notes.txt" />
+    <Compile Include="Exemple_03\1_Before\EmployeeService.cs" />
+    <Compile Include="Exemple_03\2_After\HRPromotions.cs" />
+    <Compile Include="Exemple_03\2_After\Employee.cs" />
+    <Compile Include="Exemple_03\2_After\FinITCalculations.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
